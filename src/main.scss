@@ -1,4 +1,3 @@
-@use './scss/base/base';
-@use './scss/base/reset';
-@use './scss/layots/card';
-@use './scss/layots/header';
+// Сначала подключаем reset и base
+@import './scss/base/base';
+@import './scss/base/reset';

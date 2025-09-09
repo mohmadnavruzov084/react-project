@@ -11,6 +11,7 @@ $accent-color: rgb(211, 130, 144);
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 clamp(15px, 10vw, 30px);
+    cursor: pointer;
 
     &__title {
         text-align: center;
@@ -109,7 +110,13 @@ $accent-color: rgb(211, 130, 144);
     }
 }
 
-.svg_loaoder {
+
+
+
+.spinner {
+    margin: 20px auto;
+    display: block;
+    animation: rotate 2s linear infinite;
     margin-top: 100px;
     width: 200px;
     grid-column: 1 / -1;
@@ -122,4 +129,10 @@ $accent-color: rgb(211, 130, 144);
     background: transparent !important;
     box-shadow: none !important;
 
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
 }
